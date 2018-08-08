@@ -1,0 +1,378 @@
+[
+  {
+    "testName": "1 GET request",
+    "uri": "/albums/10",
+    "method": "GET",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 1,
+    "expTitle": "distinctio laborum qui",
+    "headers": {
+      "User-Agent": "Request-Promise"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "2 GET request",
+    "uri": "/posts/5",
+    "method": "GET",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 1,
+    "expTitle": "nesciunt quas odio",
+    "headers": {
+      "User-Agent": "Request-Promise"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "3 GET request",
+    "uri": "/todos/98",
+    "method": "GET",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 5,
+    "expTitle": "debitis accusantium ut quo facilis nihil quis sapiente necessitatibus",
+    "headers": {
+      "User-Agent": "Request-Promise"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "testName": "1 PUT request",
+    "uri": "/posts/1",
+    "method": "PUT",
+    "body": {
+      "id": 1,
+      "title": "new post",
+      "body": "some body",
+      "userId": 1
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 1,
+    "expTitle": "new post",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "2 PUT request",
+    "uri": "/todos/4",
+    "method": "PUT",
+    "body": {
+      "id": 4,
+      "title": "i need to do something",
+      "completed": true,
+      "userId": 3
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 3,
+    "expTitle": "i need to do something",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "testName": "3 PUT request",
+    "uri": "/albums/16",
+    "method": "PUT",
+    "body": {
+      "id": 16,
+      "title": "this is new album",
+      "userId": 76
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 76,
+    "expTitle": "this is new album",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "1 DELETE request",
+    "uri": "/albums/16",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
+    "testName": "1 POST request",
+    "uri": "/albums",
+    "method": "POST",
+    "body": {
+      "title": "foo",
+      "body": "bar",
+      "userId": 54
+    },
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expUserId": 54,
+    "expTitle": "foo",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "2 POST request",
+    "uri": "/todos",
+    "method": "POST",
+    "body": {
+      "title": "new to do",
+      "completed": true,
+      "userId": 21
+    },
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expUserId": 21,
+    "expTitle": "new to do",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "testName": "3 POST request",
+    "uri": "/posts",
+    "method": "POST",
+    "body": {
+      "title": "new post",
+      "body": "post",
+      "userId": 48
+    },
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expUserId": 48,
+    "expTitle": "new post",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "1 PATCH request",
+    "uri": "/posts/3",
+    "method": "PATCH",
+    "body": {
+      "title": "new title"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 1,
+    "expTitle": "new title",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "2 PATCH request",
+    "uri": "/albums/45",
+    "method": "PATCH",
+    "body": {
+      "title": "new album"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 5,
+    "expTitle": "new album",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "testName": "3 PATCH request",
+    "uri": "/todos/54",
+    "method": "PATCH",
+    "body": {
+      "title": "new todo"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expUserId": 3,
+    "expTitle": "new todo",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    },
+    "responseSchema": {
+      "properties": {
+        "userId": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+]
