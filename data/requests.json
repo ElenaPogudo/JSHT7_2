@@ -9,19 +9,6 @@
     "expTitle": "distinctio laborum qui",
     "headers": {
       "User-Agent": "Request-Promise"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -32,24 +19,9 @@
     "expStatusMessage": "OK",
     "expUserId": 1,
     "expTitle": "nesciunt quas odio",
+    "expBody": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
     "headers": {
       "User-Agent": "Request-Promise"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -60,24 +32,66 @@
     "expStatusMessage": "OK",
     "expUserId": 5,
     "expTitle": "debitis accusantium ut quo facilis nihil quis sapiente necessitatibus",
+    "expCompleted": true,
     "headers": {
       "User-Agent": "Request-Promise"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "completed": {
-          "type": "boolean"
-        }
+    }
+  },
+  {
+    "testName": "4 GET request",
+    "uri": "/photos/42",
+    "method": "GET",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expAlbumId": 1,
+    "expTitle": "voluptatibus a autem molestias voluptas architecto culpa",
+    "expUrl": "http://placehold.it/600/ca50ac",
+    "expThumbnailUrl": "http://placehold.it/150/ca50ac",
+    "headers": {
+      "User-Agent": "Request-Promise"
+    }
+  },
+  {
+    "testName": "5 GET request",
+    "uri": "/comments/496",
+    "method": "GET",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expPostId": 100,
+    "expName": "et occaecati asperiores quas voluptas ipsam nostrum",
+    "expEmail": "Zola@lizzie.com",
+    "expBody": "neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel",
+    "headers": {
+      "User-Agent": "Request-Promise"
+    }
+  },
+  {
+    "testName": "6 GET request",
+    "uri": "/users/4",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expName": "Chelsey Dietrich",
+    "expUsername": "Kamren",
+    "expEmail": "Lucio_Hettinger@annie.ca",
+    "expAddress": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
       }
+    },
+    "expEhone": "(254)954-1289",
+    "expWebsite": "demarco.info",
+    "expCompany": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    },
+    "headers": {
+      "User-Agent": "Request-Promise"
     }
   },
   {
@@ -94,24 +108,9 @@
     "expStatusMessage": "OK",
     "expUserId": 1,
     "expTitle": "new post",
+    "expBody": "some body",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -128,24 +127,9 @@
     "expStatusMessage": "OK",
     "expUserId": 3,
     "expTitle": "i need to do something",
+    "expCompleted": true,
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "completed": {
-          "type": "boolean"
-        }
-      }
     }
   },
   {
@@ -163,19 +147,101 @@
     "expTitle": "this is new album",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "4 PUT request",
+    "uri": "/photos/12",
+    "method": "PUT",
+    "body": {
+      "albumId": 7,
+      "id": 12,
+      "title": "this is new album",
+      "url": "url",
+      "thumbnailUrl": "i dont know what is it"
     },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expAlbumId": 7,
+    "expUrl": "url",
+    "expThumbnailUrl": "i dont know what is it",
+    "expTitle": "this is new album",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "5 PUT request",
+    "uri": "/comments/356",
+    "method": "PUT",
+    "body": {
+      "postId": 2,
+      "id": 16,
+      "name": "nameee",
+      "email": "unddv",
+      "body": "my comment"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expPostId": 2,
+    "expName": "nameee",
+    "expEmail": "unddv",
+    "expBody": "my comment",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "6 PUT request",
+    "uri": "/users/7",
+    "method": "PUT",
+    "body": {
+      "id": 7,
+      "name": "ChelseyDietrich",
+      "username": "Kamen",
+      "email": "Lucior@annie.ca",
+      "address": {
+        "street": "Sks Walks",
+        "suite": "Su351",
+        "city": "Roseview",
+        "zipcode": "263",
+        "geo": {
+          "lat": "8129",
+          "lng": "62.542"
         }
+      },
+      "phone": "4-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "KeebleC",
+        "catchPhrase": "samSolution",
+        "bs": "revolutionize end-to-end systems"
       }
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expName": "ChelseyDietrich",
+    "expUsername": "Kamen",
+    "expEmail": "Lucior@annie.ca",
+    "expAddress": {
+      "street": "Sks Walks",
+      "suite": "Su351",
+      "city": "Roseview",
+      "zipcode": "263",
+      "geo": {
+        "lat": "8129",
+        "lng": "62.542"
+      }
+    },
+    "expPhone": "4-1289",
+    "expWebsite": "demarco.info",
+    "expCompany": {
+      "name": "KeebleC",
+      "catchPhrase": "samSolution",
+      "bs": "revolutionize end-to-end systems"
+    },
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
     }
   },
   {
@@ -191,32 +257,15 @@
     "uri": "/albums",
     "method": "POST",
     "body": {
-      "title": "foo",
-      "body": "bar",
-      "userId": 54
+      "title": "this is new album",
+      "userId": 76
     },
     "expStatusCode": 201,
     "expStatusMessage": "Created",
-    "expUserId": 54,
-    "expTitle": "foo",
+    "expUserId": 76,
+    "expTitle": "this is new album",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -224,32 +273,16 @@
     "uri": "/todos",
     "method": "POST",
     "body": {
-      "title": "new to do",
+      "title": "i need to do something",
       "completed": true,
-      "userId": 21
+      "userId": 3
     },
     "expStatusCode": 201,
     "expStatusMessage": "Created",
-    "expUserId": 21,
-    "expTitle": "new to do",
+    "expUserId": 3,
+    "expTitle": "i need to do something",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "completed": {
-          "type": "boolean"
-        }
-      }
     }
   },
   {
@@ -258,31 +291,108 @@
     "method": "POST",
     "body": {
       "title": "new post",
-      "body": "post",
-      "userId": 48
+      "body": "some body",
+      "userId": 1
     },
     "expStatusCode": 201,
     "expStatusMessage": "Created",
-    "expUserId": 48,
+    "expUserId": 1,
     "expTitle": "new post",
+    "expBody": "some body",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "4 POST request",
+    "uri": "/photos",
+    "method": "POST",
+    "body": {
+      "albumId": 7,
+      "title": "this is new album",
+      "url": "url",
+      "thumbnailUrl": "i dont know what is it"
     },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expAlbumId": 7,
+    "expUrl": "url",
+    "expThumbnailUrl": "i dont know what is it",
+    "expTitle": "this is new album",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "5 POST request",
+    "uri": "/comments",
+    "method": "POST",
+    "body": {
+      "postId": 2,
+      "name": "nameee",
+      "email": "unddv",
+      "body": "my comment"
+    },
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expPostId": 2,
+    "expName": "nameee",
+    "expEmail": "unddv",
+    "expBody": "my comment",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "6 POST request",
+    "uri": "/users",
+    "method": "POST",
+    "body": {
+      "name": "ChelseyDietrich",
+      "username": "Kamen",
+      "email": "Lucior@annie.ca",
+      "address": {
+        "street": "Sks Walks",
+        "suite": "Su351",
+        "city": "Roseview",
+        "zipcode": "263",
+        "geo": {
+          "lat": "8129",
+          "lng": "62.542"
         }
+      },
+      "phone": "4-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "KeebleC",
+        "catchPhrase": "samSolution",
+        "bs": "revolutionize end-to-end systems"
       }
+    },
+    "expStatusCode": 201,
+    "expStatusMessage": "Created",
+    "expName": "ChelseyDietrich",
+    "expUsername": "Kamen",
+    "expEmail": "Lucior@annie.ca",
+    "expAddress": {
+      "street": "Sks Walks",
+      "suite": "Su351",
+      "city": "Roseview",
+      "zipcode": "263",
+      "geo": {
+        "lat": "8129",
+        "lng": "62.542"
+      }
+    },
+    "expPhone": "4-1289",
+    "expWebsite": "demarco.info",
+    "expCompany": {
+      "name": "KeebleC",
+      "catchPhrase": "samSolution",
+      "bs": "revolutionize end-to-end systems"
+    },
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
     }
   },
   {
@@ -296,24 +406,9 @@
     "expStatusMessage": "OK",
     "expUserId": 1,
     "expTitle": "new title",
+    "expBody": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -329,19 +424,6 @@
     "expTitle": "new album",
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
-    },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        }
-      }
     }
   },
   {
@@ -355,24 +437,76 @@
     "expStatusMessage": "OK",
     "expUserId": 3,
     "expTitle": "new todo",
+    "expCompleted": true,
     "headers": {
       "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "4 PATCH request",
+    "uri": "/photos/41",
+    "method": "PATCH",
+    "body": {
+      "title": "this is new album"
     },
-    "responseSchema": {
-      "properties": {
-        "userId": {
-          "type": "number"
-        },
-        "id": {
-          "type": "number"
-        },
-        "title": {
-          "type": "string"
-        },
-        "completed": {
-          "type": "boolean"
-        }
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expAlbumId": 1,
+    "expUrl": "http://placehold.it/600/659403",
+    "expThumbnailUrl": "http://placehold.it/150/659403",
+    "expTitle": "this is new album",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "5 PATCH request",
+    "uri": "/comments/253",
+    "method": "PATCH",
+    "body": {
+      "name": "voluptate ipsum corporis quis provident voluptatem eos asperiores"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expPostId": 51,
+    "expName": "voluptate ipsum corporis quis provident voluptatem eos asperiores",
+    "expEmail": "Jayde@geovanny.io",
+    "expBody": "debitis dignissimos ut illum\nrerum voluptatem ut qui labore\noptio quaerat iure\niste consequuntur praesentium vero blanditiis quibusdam aut",
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  },
+  {
+    "testName": "6 PATCH request",
+    "uri": "/users/4",
+    "method": "PATCH",
+    "body": {
+      "name": "ChelseyDietrich"
+    },
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "expName": "ChelseyDietrich",
+    "expUsername": "Karianne",
+    "expEmail": "Julianne.OConner@kory.org",
+    "expAddress": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
       }
+    },
+    "expPhone": "493-170-9623 x156",
+    "expWebsite": "kale.biz",
+    "expCompany": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    },
+    "headers": {
+      "Content-type": "application/json; charset=UTF-8"
     }
   }
 ]

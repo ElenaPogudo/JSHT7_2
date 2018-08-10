@@ -9,7 +9,8 @@ function sendRestRequestWithHeader(opts) {
         body: opts.body,
         headers: opts.header,
         json: true,
-        resolveWithFullResponse: true
+        resolveWithFullResponse: true,
+        simple: false
     };
 
     return request(options).then((response) => {
@@ -19,3 +20,5 @@ function sendRestRequestWithHeader(opts) {
 }
 
 module.exports = sendRestRequestWithHeader;
+
+false;
