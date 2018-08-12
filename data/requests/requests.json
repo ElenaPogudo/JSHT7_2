@@ -253,6 +253,46 @@
     "responseSchema": {}
   },
   {
+    "testName": "2 DELETE request",
+    "uri": "/users/1",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
+    "testName": "3 DELETE request",
+    "uri": "/todos/99",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
+    "testName": "4 DELETE request",
+    "uri": "/photos/54",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
+    "testName": "5 DELETE request",
+    "uri": "/comments/146",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
+    "testName": "6 DELETE request",
+    "uri": "/photos/86",
+    "method": "DELETE",
+    "expStatusCode": 200,
+    "expStatusMessage": "OK",
+    "responseSchema": {}
+  },
+  {
     "testName": "1 POST request",
     "uri": "/albums",
     "method": "POST",

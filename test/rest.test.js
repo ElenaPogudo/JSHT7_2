@@ -4,8 +4,8 @@ const { expect } = require(`chai`);
 const sendRequest = require(`../utils/sendRequest`);
 const logger = require(`../utils/logger.conf`);
 const env = require(`../data/env`);
-const requests = require(`../data/requests`);
-const badRequests = require(`../data/badRequests`);
+const requests = require(`../data/requests/requests`);
+const badRequests = require(`../data/requests/badRequests`);
 const Validator = require(`jsonschema`).Validator;
 
 
@@ -30,9 +30,13 @@ describe(`Positive tests of ${env.uri}`, () => {
 
             });
 
-            it(`Status and message of response`, () => {
-                logger.info(`Checking response status and message`);
+            it(`Status of response`, () => {
+                logger.info(`Checking response status`);
                 expect(response.statusCode).to.eql(data.expStatusCode);
+            });
+
+            it(`Message of response`, () => {
+                logger.info(`Checking response message`);
                 expect(response.statusMessage).to.eql(data.expStatusMessage);
             });
 
@@ -156,9 +160,13 @@ describe(`Negative tests of ${env.uri}`, () => {
 
             });
 
-            it('Status and message of response', () => {
-                logger.info('Checking response status and message');
+            it(`Status of response`, () => {
+                logger.info(`Checking response status`);
                 expect(response.statusCode).to.eql(data.expStatusCode);
+            });
+
+            it(`Message of response`, () => {
+                logger.info(`Checking response message`);
                 expect(response.statusMessage).to.eql(data.expStatusMessage);
             });
 
