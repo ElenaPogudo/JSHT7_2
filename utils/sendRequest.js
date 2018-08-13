@@ -7,7 +7,9 @@ function sendRestRequestWithHeader(opts) {
         uri: opts.uri,
         method: opts.method,
         body: opts.body,
-        headers: opts.header,
+        headers:[ {
+            "User-Agent": "Request-Promise"
+        }],
         json: true,
         resolveWithFullResponse: true,
         simple: false
@@ -20,5 +22,3 @@ function sendRestRequestWithHeader(opts) {
 }
 
 module.exports = sendRestRequestWithHeader;
-
-false;

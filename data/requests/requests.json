@@ -1,75 +1,48 @@
 [
   {
-    "testName": "1 GET request",
+    "testName": "1 GET albums request",
     "uri": "/albums/10",
     "method": "GET",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 1,
-    "expTitle": "distinctio laborum qui",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "expTitle": "distinctio laborum qui"
   },
   {
-    "testName": "2 GET request",
+    "testName": "2 GET posts request",
     "uri": "/posts/5",
     "method": "GET",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 1,
     "expTitle": "nesciunt quas odio",
-    "expBody": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "expBody": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
   },
   {
-    "testName": "3 GET request",
+    "testName": "3 GET todos request",
     "uri": "/todos/98",
     "method": "GET",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 5,
     "expTitle": "debitis accusantium ut quo facilis nihil quis sapiente necessitatibus",
-    "expCompleted": true,
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "expCompleted": true
   },
   {
-    "testName": "4 GET request",
+    "testName": "4 GET photos request",
     "uri": "/photos/42",
     "method": "GET",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expAlbumId": 1,
     "expTitle": "voluptatibus a autem molestias voluptas architecto culpa",
     "expUrl": "http://placehold.it/600/ca50ac",
-    "expThumbnailUrl": "http://placehold.it/150/ca50ac",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "expThumbnailUrl": "http://placehold.it/150/ca50ac"
   },
   {
-    "testName": "5 GET request",
+    "testName": "5 GET comments request",
     "uri": "/comments/496",
     "method": "GET",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expPostId": 100,
     "expName": "et occaecati asperiores quas voluptas ipsam nostrum",
     "expEmail": "Zola@lizzie.com",
-    "expBody": "neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "expBody": "neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel"
   },
   {
-    "testName": "6 GET request",
+    "testName": "6 GET users request",
     "uri": "/users/4",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expName": "Chelsey Dietrich",
     "expUsername": "Kamren",
     "expEmail": "Lucio_Hettinger@annie.ca",
@@ -89,13 +62,10 @@
       "name": "Keebler LLC",
       "catchPhrase": "User-centric fault-tolerant solution",
       "bs": "revolutionize end-to-end systems"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "1 PUT request",
+    "testName": "1 PUT posts request",
     "uri": "/posts/1",
     "method": "PUT",
     "body": {
@@ -104,17 +74,12 @@
       "body": "some body",
       "userId": 1
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 1,
     "expTitle": "new post",
-    "expBody": "some body",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expBody": "some body"
   },
   {
-    "testName": "2 PUT request",
+    "testName": "2 PUT todos request",
     "uri": "/todos/4",
     "method": "PUT",
     "body": {
@@ -123,17 +88,12 @@
       "completed": true,
       "userId": 3
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 3,
     "expTitle": "i need to do something",
-    "expCompleted": true,
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expCompleted": true
   },
   {
-    "testName": "3 PUT request",
+    "testName": "3 PUT albums request",
     "uri": "/albums/16",
     "method": "PUT",
     "body": {
@@ -141,16 +101,11 @@
       "title": "this is new album",
       "userId": 76
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expUserId": 76,
-    "expTitle": "this is new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expTitle": "this is new album"
   },
   {
-    "testName": "4 PUT request",
+    "testName": "4 PUT photos request",
     "uri": "/photos/12",
     "method": "PUT",
     "body": {
@@ -160,18 +115,13 @@
       "url": "url",
       "thumbnailUrl": "i dont know what is it"
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expAlbumId": 7,
     "expUrl": "url",
     "expThumbnailUrl": "i dont know what is it",
-    "expTitle": "this is new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expTitle": "this is new album"
   },
   {
-    "testName": "5 PUT request",
+    "testName": "5 PUT comments request",
     "uri": "/comments/356",
     "method": "PUT",
     "body": {
@@ -181,18 +131,13 @@
       "email": "unddv",
       "body": "my comment"
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expPostId": 2,
     "expName": "nameee",
     "expEmail": "unddv",
-    "expBody": "my comment",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expBody": "my comment"
   },
   {
-    "testName": "6 PUT request",
+    "testName": "6 PUT users request",
     "uri": "/users/7",
     "method": "PUT",
     "body": {
@@ -218,8 +163,6 @@
         "bs": "revolutionize end-to-end systems"
       }
     },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
     "expName": "ChelseyDietrich",
     "expUsername": "Kamen",
     "expEmail": "Lucior@annie.ca",
@@ -239,77 +182,135 @@
       "name": "KeebleC",
       "catchPhrase": "samSolution",
       "bs": "revolutionize end-to-end systems"
-    },
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
     }
   },
   {
-    "testName": "1 DELETE request",
+    "testName": "1 DELETE albums request",
     "uri": "/albums/16",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "2 DELETE request",
+    "testName": "2 DELETE users request",
     "uri": "/users/1",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "3 DELETE request",
+    "testName": "3 DELETE todos request",
     "uri": "/todos/99",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "4 DELETE request",
+    "testName": "4 DELETE photos request",
     "uri": "/photos/54",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "5 DELETE request",
+    "testName": "5 DELETE comments request",
     "uri": "/comments/146",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "6 DELETE request",
+    "testName": "6 DELETE photos request",
     "uri": "/photos/86",
-    "method": "DELETE",
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "responseSchema": {}
+    "method": "DELETE"
   },
   {
-    "testName": "1 POST request",
+    "testName": "1 PATCH posts request",
+    "uri": "/posts/3",
+    "method": "PATCH",
+    "body": {
+      "title": "new title"
+    },
+    "expUserId": 1,
+    "expTitle": "new title",
+    "expBody": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "testName": "2 PATCH albums request",
+    "uri": "/albums/45",
+    "method": "PATCH",
+    "body": {
+      "title": "new album"
+    },
+    "expUserId": 5,
+    "expTitle": "new album"
+  },
+  {
+    "testName": "3 PATCH todos request",
+    "uri": "/todos/54",
+    "method": "PATCH",
+    "body": {
+      "title": "new todo"
+    },
+    "expUserId": 3,
+    "expTitle": "new todo",
+    "expCompleted": true
+  },
+  {
+    "testName": "4 PATCH photos request",
+    "uri": "/photos/41",
+    "method": "PATCH",
+    "body": {
+      "title": "this is new album"
+    },
+    "expAlbumId": 1,
+    "expUrl": "http://placehold.it/600/659403",
+    "expThumbnailUrl": "http://placehold.it/150/659403",
+    "expTitle": "this is new album"
+  },
+  {
+    "testName": "5 PATCH comments request",
+    "uri": "/comments/253",
+    "method": "PATCH",
+    "body": {
+      "name": "voluptate ipsum corporis quis provident voluptatem eos asperiores"
+    },
+    "expPostId": 51,
+    "expName": "voluptate ipsum corporis quis provident voluptatem eos asperiores",
+    "expEmail": "Jayde@geovanny.io",
+    "expBody": "debitis dignissimos ut illum\nrerum voluptatem ut qui labore\noptio quaerat iure\niste consequuntur praesentium vero blanditiis quibusdam aut"
+  },
+  {
+    "testName": "6 PATCH users request",
+    "uri": "/users/4",
+    "method": "PATCH",
+    "body": {
+      "name": "ChelseyDietrich"
+    },
+    "expName": "ChelseyDietrich",
+    "expUsername": "Karianne",
+    "expEmail": "Julianne.OConner@kory.org",
+    "expAddress": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "expPhone": "493-170-9623 x156",
+    "expWebsite": "kale.biz",
+    "expCompany": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "testName": "1 POST albums request",
     "uri": "/albums",
     "method": "POST",
     "body": {
       "title": "this is new album",
       "userId": 76
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expUserId": 76,
-    "expTitle": "this is new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expTitle": "this is new album"
   },
   {
-    "testName": "2 POST request",
+    "testName": "2 POST todos request",
     "uri": "/todos",
     "method": "POST",
     "body": {
@@ -317,16 +318,11 @@
       "completed": true,
       "userId": 3
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expUserId": 3,
-    "expTitle": "i need to do something",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expTitle": "i need to do something"
   },
   {
-    "testName": "3 POST request",
+    "testName": "3 POST posts request",
     "uri": "/posts",
     "method": "POST",
     "body": {
@@ -334,17 +330,12 @@
       "body": "some body",
       "userId": 1
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expUserId": 1,
     "expTitle": "new post",
-    "expBody": "some body",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expBody": "some body"
   },
   {
-    "testName": "4 POST request",
+    "testName": "4 POST photos request",
     "uri": "/photos",
     "method": "POST",
     "body": {
@@ -353,18 +344,13 @@
       "url": "url",
       "thumbnailUrl": "i dont know what is it"
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expAlbumId": 7,
     "expUrl": "url",
     "expThumbnailUrl": "i dont know what is it",
-    "expTitle": "this is new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expTitle": "this is new album"
   },
   {
-    "testName": "5 POST request",
+    "testName": "5 POST comments request",
     "uri": "/comments",
     "method": "POST",
     "body": {
@@ -373,18 +359,13 @@
       "email": "unddv",
       "body": "my comment"
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expPostId": 2,
     "expName": "nameee",
     "expEmail": "unddv",
-    "expBody": "my comment",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
+    "expBody": "my comment"
   },
   {
-    "testName": "6 POST request",
+    "testName": "6 POST users request",
     "uri": "/users",
     "method": "POST",
     "body": {
@@ -409,8 +390,6 @@
         "bs": "revolutionize end-to-end systems"
       }
     },
-    "expStatusCode": 201,
-    "expStatusMessage": "Created",
     "expName": "ChelseyDietrich",
     "expUsername": "Kamen",
     "expEmail": "Lucior@annie.ca",
@@ -430,123 +409,6 @@
       "name": "KeebleC",
       "catchPhrase": "samSolution",
       "bs": "revolutionize end-to-end systems"
-    },
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "1 PATCH request",
-    "uri": "/posts/3",
-    "method": "PATCH",
-    "body": {
-      "title": "new title"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expUserId": 1,
-    "expTitle": "new title",
-    "expBody": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "2 PATCH request",
-    "uri": "/albums/45",
-    "method": "PATCH",
-    "body": {
-      "title": "new album"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expUserId": 5,
-    "expTitle": "new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "3 PATCH request",
-    "uri": "/todos/54",
-    "method": "PATCH",
-    "body": {
-      "title": "new todo"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expUserId": 3,
-    "expTitle": "new todo",
-    "expCompleted": true,
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "4 PATCH request",
-    "uri": "/photos/41",
-    "method": "PATCH",
-    "body": {
-      "title": "this is new album"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expAlbumId": 1,
-    "expUrl": "http://placehold.it/600/659403",
-    "expThumbnailUrl": "http://placehold.it/150/659403",
-    "expTitle": "this is new album",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "5 PATCH request",
-    "uri": "/comments/253",
-    "method": "PATCH",
-    "body": {
-      "name": "voluptate ipsum corporis quis provident voluptatem eos asperiores"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expPostId": 51,
-    "expName": "voluptate ipsum corporis quis provident voluptatem eos asperiores",
-    "expEmail": "Jayde@geovanny.io",
-    "expBody": "debitis dignissimos ut illum\nrerum voluptatem ut qui labore\noptio quaerat iure\niste consequuntur praesentium vero blanditiis quibusdam aut",
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  },
-  {
-    "testName": "6 PATCH request",
-    "uri": "/users/4",
-    "method": "PATCH",
-    "body": {
-      "name": "ChelseyDietrich"
-    },
-    "expStatusCode": 200,
-    "expStatusMessage": "OK",
-    "expName": "ChelseyDietrich",
-    "expUsername": "Karianne",
-    "expEmail": "Julianne.OConner@kory.org",
-    "expAddress": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
-    },
-    "expPhone": "493-170-9623 x156",
-    "expWebsite": "kale.biz",
-    "expCompany": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    },
-    "headers": {
-      "Content-type": "application/json; charset=UTF-8"
     }
   }
 ]

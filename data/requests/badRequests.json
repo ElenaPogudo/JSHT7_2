@@ -1,701 +1,384 @@
 [
   {
-    "testName": "Wrong uri request 1.1.1",
+    "testName": "Wrong uri request 1.GET.albums",
     "uri": "/albums/1000",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.1.2",
+    "testName": "Wrong uri request 1.GET.users",
     "uri": "/users/1000",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.1.3",
+    "testName": "Wrong uri request 1.GET.posts",
     "uri": "/posts/1000",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.1.4",
+    "testName": "Wrong uri request 1.GET.photos",
     "uri": "/photos/5001",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.1.5",
+    "testName": "Wrong uri request 1.GET.comments",
     "uri": "/comments/1000",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.1.6",
+    "testName": "Wrong uri request 1.GET.todos",
     "uri": "/todos/1000",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 1.2.1",
+    "testName": "Wrong uri request 1.POST.albums",
     "uri": "/albums/1000",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.2.2",
+    "testName": "Wrong uri request 1.POST.posts",
     "uri": "/posts/1000",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.2.3",
+    "testName": "Wrong uri request 1.POST.photos",
     "uri": "/photos/5001",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.2.4",
+    "testName": "Wrong uri request 1.POST.users",
     "uri": "/users/1000",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.2.5",
+    "testName": "Wrong uri request 1.POST.comments",
     "uri": "/comments/1000",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.2.6",
+    "testName": "Wrong uri request 1.POST.todos",
     "uri": "/todos/1000",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 1.3.1",
+    "testName": "Wrong uri request 1.PUT.albums",
     "uri": "/albums/1000",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.3.2",
+    "testName": "Wrong uri request 1.PUT.posts",
     "uri": "/posts/1000",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.3.3",
+    "testName": "Wrong uri request 1.PUT.photos",
     "uri": "/photos/5001",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.3.4",
+    "testName": "Wrong uri request 1.PUT.comments",
     "uri": "/comments/1000",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.3.5",
+    "testName": "Wrong uri request 1.PUT.todos",
     "uri": "/todos/1000",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.3.6",
+    "testName": "Wrong uri request 1.PUT.users",
     "uri": "/users/1000",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 1.4.1",
+    "testName": "Wrong uri request 1.PATCH.albums",
     "uri": "/albums/1000",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.4.2",
+    "testName": "Wrong uri request 1.PATCH.photos",
     "uri": "/photos/5001",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.4.3",
+    "testName": "Wrong uri request 1.PATCH.posts",
     "uri": "/posts/1000",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.4.4",
+    "testName": "Wrong uri request 1.PATCH.comments",
     "uri": "/comments/1000",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.4.5",
+    "testName": "Wrong uri request 1.PATCH.todos",
     "uri": "/todos/1000",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.4.6",
+    "testName": "Wrong uri request 1.PATCH.users",
     "uri": "/users/1000",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 1.5.1",
+    "testName": "Wrong uri request 1.DELETE.albums",
     "uri": "/albums/1000",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 1.5.2",
+    "testName": "Wrong uri request 1.DELETE.photos",
     "uri": "/photos/5001",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 1.5.3",
+    "testName": "Wrong uri request 1.DELETE.posts",
     "uri": "/posts/1000",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 1.5.4",
+    "testName": "Wrong uri request 1.DELETE.comments",
     "uri": "/comments/1000",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 1.5.5",
+    "testName": "Wrong uri request 1.DELETE.todos",
     "uri": "/todos/1000",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 1.5.6",
+    "testName": "Wrong uri request 1.DELETE.users",
     "uri": "/users/1000",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong uri request 2.1",
+    "testName": "Wrong uri request 2.POST",
     "uri": "/a",
-    "method": "POST",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "POST"
   },
   {
-    "testName": "Wrong uri request 2.2",
+    "testName": "Wrong uri request 2.GET",
     "uri": "/a",
-    "method": "GET",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "GET"
   },
   {
-    "testName": "Wrong uri request 2.3",
+    "testName": "Wrong uri request 2.PATCH",
     "uri": "/a",
-    "method": "PATCH",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PATCH"
   },
   {
-    "testName": "Wrong uri request 2.4",
+    "testName": "Wrong uri request 2.PUT",
     "uri": "/a",
-    "method": "PUT",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "PUT"
   },
   {
-    "testName": "Wrong uri request 2.5",
+    "testName": "Wrong uri request 2.DELETE",
     "uri": "/a",
-    "method": "DELETE",
-    "expStatusCode": 404,
-    "expStatusMessage": "Not Found",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "DELETE"
   },
   {
-    "testName": "Wrong method 1.1",
+    "testName": "Wrong method 1.OPTIONS.albums",
     "uri": "/albums/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 1.2",
+    "testName": "Wrong method 1.OPTIONS.todos",
     "uri": "/todos/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 1.3",
+    "testName": "Wrong method 1.OPTIONS.comments",
     "uri": "/comments/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 1.4",
+    "testName": "Wrong method 1.OPTIONS.photos",
     "uri": "/photos/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 1.5",
+    "testName": "Wrong method 1.OPTIONS.posts",
     "uri": "/posts/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 1.6",
+    "testName": "Wrong method 1.OPTIONS.users",
     "uri": "/users/1",
-    "method": "OPTIONS",
-    "expStatusCode": 204,
-    "expStatusMessage": "No Content",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "OPTIONS"
   },
   {
-    "testName": "Wrong method 2.1",
+    "testName": "Wrong method 2.TRACE.albums",
     "uri": "/albums/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong method 2.2",
+    "testName": "Wrong method 2.TRACE.users",
     "uri": "/users/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong method 2.3",
+    "testName": "Wrong method 2.TRACE.posts",
     "uri": "/posts/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong method 2.4",
+    "testName": "Wrong method 2.TRACE.photos",
     "uri": "/photos/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong method 2.5",
+    "testName": "Wrong method 2.TRACE.comments",
     "uri": "/comments/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong method 2.6",
+    "testName": "Wrong method 2.TRACE.todos",
     "uri": "/todos/1",
-    "method": "TRACE",
-    "expStatusCode": 405,
-    "expStatusMessage": "Not Allowed",
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "method": "TRACE"
   },
   {
-    "testName": "Wrong body 1.1.1 (only one field in body when should be three)",
+    "testName": "Wrong body 1.PUT.albums (only one field in body when should be three)",
     "uri": "/albums/9",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new album"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.1.2 (only one field in body when should be five)",
+    "testName": "Wrong body 1.PUT.photos (only one field in body when should be five)",
     "uri": "/photos/21",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new photo"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.1.3 (only one field in body when should be five)",
+    "testName": "Wrong body 1.PUT.comments (only one field in body when should be five)",
     "uri": "/comments/404",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new comment"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.1.4 (only one field in body when should be three)",
+    "testName": "Wrong body 1.PUT.todos (only one field in body when should be three)",
     "uri": "/todos/59",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new todo"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.1.5 (only one field in body when should be eight)",
+    "testName": "Wrong body 1.PUT.users (only one field in body when should be eight)",
     "uri": "/users/2",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new user"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.1.6 (only one field in body when should be four)",
+    "testName": "Wrong body 1.PUT.posts (only one field in body when should be four)",
     "uri": "/posts/47",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new post"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.1 (only one field in body when should be two)",
+    "testName": "Wrong body 1.POST.albums (only one field in body when should be two)",
     "uri": "/albums/9",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new album"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.2 (only one field in body when should be four)",
+    "testName": "Wrong body 1.POST.photos (only one field in body when should be four)",
     "uri": "/photos/21",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new photo"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.3 (only one field in body when should be four)",
+    "testName": "Wrong body 1.POST.comments (only one field in body when should be four)",
     "uri": "/comments/404",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new comment"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.4 (only one field in body when should be two)",
+    "testName": "Wrong body 1.POST.todos (only one field in body when should be two)",
     "uri": "/todos/59",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new todo"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.5 (only one field in body when should be seven)",
+    "testName": "Wrong body 1.POST.users (only one field in body when should be seven)",
     "uri": "/users/2",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new user"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 1.2.6 (only one field in body when should be three)",
+    "testName": "Wrong body 1.POST.posts (only one field in body when should be three)",
     "uri": "/posts/47",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new post"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.1 (empty fields)",
+    "testName": "Wrong body 2.PUT.posts (empty fields)",
     "uri": "/posts/61",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "id": "",
       "title": "",
       "body": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.2 (empty fields)",
+    "testName": "Wrong body 2.PUT.albums (empty fields)",
     "uri": "/albums/61",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "id": "",
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.3 (empty fields)",
+    "testName": "Wrong body 2.PUT.photos (empty fields)",
     "uri": "/photos/61",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": "",
       "id": "",
       "title": "",
       "url": "",
       "thumbnailUrl": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.4 (empty fields)",
+    "testName": "Wrong body 2.PUT.comments (empty fields)",
     "uri": "/comments/61",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": "",
       "id": "",
       "name": "",
       "email": "",
       "body": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.5 (empty fields)",
+    "testName": "Wrong body 2.PUT.users (empty fields)",
     "uri": "/users/6",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "id": "",
       "name": "",
@@ -718,94 +401,64 @@
         "catchPhrase": "",
         "bs": ""
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.1.6 (empty fields)",
+    "testName": "Wrong body 2.PUT.todos (empty fields)",
     "uri": "/todos/1",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "id": "",
       "title": "",
       "completed": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.1 (empty fields)",
+    "testName": "Wrong body 2.POST.posts (empty fields)",
     "uri": "/posts/61",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "title": "",
       "body": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.2 (empty fields)",
+    "testName": "Wrong body 2.POST.albums (empty fields)",
     "uri": "/albums/61",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.3 (empty fields)",
+    "testName": "Wrong body 2.POST.photos (empty fields)",
     "uri": "/photos/61",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": "",
       "title": "",
       "url": "",
       "thumbnailUrl": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.4 (empty fields)",
+    "testName": "Wrong body 2.POST.comments (empty fields)",
     "uri": "/comments/61",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": "",
       "name": "",
       "email": "",
       "body": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.5 (empty fields)",
+    "testName": "Wrong body 2.POST.users (empty fields)",
     "uri": "/users/6",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": "",
       "username": "",
@@ -827,190 +480,125 @@
         "catchPhrase": "",
         "bs": ""
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.2.6 (empty fields)",
+    "testName": "Wrong body 2.POST.todos (empty fields)",
     "uri": "/todos/1",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "",
       "title": "",
       "completed": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.1 (empty fields)",
+    "testName": "Wrong body 2.PATCH.posts (empty fields)",
     "uri": "/posts/61",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.2 (empty fields)",
+    "testName": "Wrong body 2.PATCH.albums (empty fields)",
     "uri": "/albums/61",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.3 (empty fields)",
+    "testName": "Wrong body 2.PATCH.photos (empty fields)",
     "uri": "/photos/61",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.4 (empty fields)",
+    "testName": "Wrong body 2.PATCH.comments (empty fields)",
     "uri": "/comments/61",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.5 (empty fields)",
+    "testName": "Wrong body 2.PATCH.users (empty fields)",
     "uri": "/users/6",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 2.3.6 (empty fields)",
+    "testName": "Wrong body 2.PATCH.todos (empty fields)",
     "uri": "/todos/1",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": ""
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.1 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.photos (fields with not allowed name)",
     "uri": "/photos/15",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": 10,
       "imjnhbgvfd": 15,
       "title": "this is new album",
       "url": "some url"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.2 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.posts (fields with not allowed name)",
     "uri": "/posts/25",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "iythgrd": 25,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
       "body": "quia et s"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.3 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.comments (fields with not allowed name)",
     "uri": "/comments/125",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": 1,
       "id": 125,
       "name": "id labore ex et quam laborum",
       "ethygrfmail": "Eliseo@gardner.biz",
       "body": "laudantium enim quasi e"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.4 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.albums (fields with not allowed name)",
     "uri": "/albums/23",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "ityhrgd": 23,
       "title": "quidem molestiae enim"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.5 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.todos (fields with not allowed name)",
     "uri": "/todos/93",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "idthygr": 93,
       "title": "delectus aut autem",
       "completed": false
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.1.6 (fields with not allowed name)",
+    "testName": "Wrong body 3.PUT.users (fields with not allowed name)",
     "uri": "/users/2",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "iyujthyrgd": 2,
       "name": "Leanne Graham",
@@ -1033,92 +621,62 @@
         "catchPhrase": "Multi-layered client-server neural-net",
         "bs": "harness real-time e-markets"
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.1 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.photos (fields with not allowed name)",
     "uri": "/photos/15",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albunfgbvdmId": 10,
       "title": "this is new album",
       "url": "some url"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.2 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.posts (fields with not allowed name)",
     "uri": "/posts/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "tijmnhgbftle": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
       "body": "quia et s"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.3 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.comments (fields with not allowed name)",
     "uri": "/comments/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": 1,
       "nambgfe": "id labore ex et quam laborum",
       "email": "Eliseo@gardner.biz",
       "bodghnbfy": "laudantium enim quasi e"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.4 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.albums (fields with not allowed name)",
     "uri": "/albums/23",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "titjmghnbfle": "quidem molestiae enim"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.5 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.todos (fields with not allowed name)",
     "uri": "/todos/93",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "titlghnbfe": "delectus aut autem",
       "completed": false
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.2.6 (fields with not allowed name)",
+    "testName": "Wrong body 3.POST.users (fields with not allowed name)",
     "uri": "/users/2",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "namhngbfe": "Leanne Graham",
       "usejmnghfrname": "Bret",
@@ -1140,373 +698,223 @@
         "catchPhrase": "Multi-layered client-server neural-net",
         "bs": "harness real-time e-markets"
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.1 (fields with not allowed name)",
+    "testName": "Wrong body 3.PATCH.photos (fields with not allowed name)",
     "uri": "/photos/15",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "tithjgle": "this is new album"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.2 (fields with not allowed name)",
+    "testName": "Wrong body 3.PATCH.posts (fields with not allowed name)",
     "uri": "/posts/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "titghnbfle": "sunt aut ehenderit"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.3 (fields with not allowed name)",
+    "testName": "Wrong body 3.PATCH.comments (fields with not allowed name)",
     "uri": "/comments/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "nhjmghname": "idlabore ex et quam laborum"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.4 (fields with not allowed name)",
+    "testName": "Wrong body 3.PATCH.albums (fields with not allowed name)",
     "uri": "/albums/23",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "quidemmolestiae enim"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.5 (fields with not allowed name)",
+    "testName": "Wrong body 3.PATCH.todos (fields with not allowed name)",
     "uri": "/todos/93",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "titljhnfe": "delectusaut autem"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 3.3.6 (fields with not allowed namey)",
+    "testName": "Wrong body 3.PATCH.users (fields with not allowed namey)",
     "uri": "/users/2",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "nammhne": "LeanneGraham"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 4.1.1 (empty body)",
+    "testName": "Wrong body 4.PUT.users (empty body)",
     "uri": "/users/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.1.2 (empty body)",
+    "testName": "Wrong body 4.PUT.todos (empty body)",
     "uri": "/todos/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.1.3 (empty body)",
+    "testName": "Wrong body 4.PUT.comments (empty body)",
     "uri": "/comments/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.1.4 (empty body)",
+    "testName": "Wrong body 4.PUT.photos (empty body)",
     "uri": "/photos/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.1.5 (empty body)",
+    "testName": "Wrong body 4.PUT.posts (empty body)",
     "uri": "/posts/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.1.6 (empty body)",
+    "testName": "Wrong body 4.PUT.albums (empty body)",
     "uri": "/albums/57",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.1 (empty body)",
+    "testName": "Wrong body 4.POST.users (empty body)",
     "uri": "/users/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.2 (empty body)",
+    "testName": "Wrong body 4.POST.todos (empty body)",
     "uri": "/todos/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.3 (empty body)",
+    "testName": "Wrong body 4.POST.comments (empty body)",
     "uri": "/comments/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.4 (empty body)",
+    "testName": "Wrong body 4.POST.photos (empty body)",
     "uri": "/photos/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.5 (empty body)",
+    "testName": "Wrong body 4.POST.posts (empty body)",
     "uri": "/posts/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.2.6 (empty body)",
+    "testName": "Wrong body 4.POST.albums (empty body)",
     "uri": "/albums/57",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.1 (empty body)",
+    "testName": "Wrong body 4.PATCH.users (empty body)",
     "uri": "/users/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.2 (empty body)",
+    "testName": "Wrong body 4.PATCH.todos (empty body)",
     "uri": "/todos/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.3 (empty body)",
+    "testName": "Wrong body 4.PATCH.comments (empty body)",
     "uri": "/comments/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.4 (empty body)",
+    "testName": "Wrong body 4.PATCH.photos (empty body)",
     "uri": "/photos/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.5 (empty body)",
+    "testName": "Wrong body 4.PATCH.posts (empty body)",
     "uri": "/posts/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 4.3.6 (empty body)",
+    "testName": "Wrong body 4.PATCH.albums (empty body)",
     "uri": "/albums/57",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
-    "body": {},
-    "headers": {
-      "User-Agent": "Request-Promise"
-    }
+    "body": {}
   },
   {
-    "testName": "Wrong body 5.1.1 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.photos (fields data in wrong format)",
     "uri": "/photos/15",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": "jh",
       "id": "mghn",
       "title": 87,
       "url": 65
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.1.2 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.posts (fields data in wrong format)",
     "uri": "/posts/25",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "fg",
       "id": "bgfv",
       "title": 54,
       "body": 65
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.1.3 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.comments (fields data in wrong format)",
     "uri": "/comments/125",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": "jjhg",
       "id": "hgf",
       "name": 54,
       "email": 768,
       "body": 76
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.1.4 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.albums (fields data in wrong format)",
     "uri": "/albums/23",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "htg",
       "id": "hgf",
       "title": 87
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.1.5 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.todos (fields data in wrong format)",
     "uri": "/todos/93",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "jhgf",
       "id": "trew",
       "title": 34,
       "completed": "kujy"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.1.6 (fields data in wrong format)",
+    "testName": "Wrong body 5.PUT.users (fields data in wrong format)",
     "uri": "/users/2",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "id": true,
       "name": 645,
@@ -1529,92 +937,62 @@
         "catchPhrase": 45,
         "bs": 45
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.1 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.photos (fields data in wrong format)",
     "uri": "/photos/15",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": "jh",
       "title": 87,
       "url": 65
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.2 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.posts (fields data in wrong format)",
     "uri": "/posts/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "fg",
       "title": 54,
       "body": 65
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.3 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.comments (fields data in wrong format)",
     "uri": "/comments/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": "jjhg",
       "name": 54,
       "email": 768,
       "body": 76
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.4 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.albums (fields data in wrong format)",
     "uri": "/albums/23",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "htg",
       "title": 87
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.5 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.todos (fields data in wrong format)",
     "uri": "/todos/93",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": "jhgf",
       "title": 34,
       "completed": "kujy"
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.2.6 (fields data in wrong format)",
+    "testName": "Wrong body 5.POST.users (fields data in wrong format)",
     "uri": "/users/2",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": 645,
       "username": 456,
@@ -1636,130 +1014,85 @@
         "catchPhrase": 45,
         "bs": 45
       }
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.1 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.photos (fields data in wrong format)",
     "uri": "/photos/15",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": 1
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.2 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.posts (fields data in wrong format)",
     "uri": "/posts/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": 987
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.3 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.comments (fields data in wrong format)",
     "uri": "/comments/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": 654
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.4 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.albums (fields data in wrong format)",
     "uri": "/albums/23",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": 8765,
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.5 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.todos (fields data in wrong format)",
     "uri": "/todos/93",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": 34
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 5.3.6 (fields data in wrong format)",
+    "testName": "Wrong body 5.PATCH.users (fields data in wrong format)",
     "uri": "/users/2",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": 45
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.1 (fields data in wrong format)",
+    "testName": "Wrong body 6.PUT.photos (fields data in wrong format)",
     "uri": "/photos/15",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": 10,
       "id": 15,
       "title": "this is new album",
       "url": "some url",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.2 (fields data in wrong format)",
+    "testName": "Wrong body 6.PUT.posts (fields data in wrong format)",
     "uri": "/posts/25",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "id": 25,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
       "body": "quia et s",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.3 (fields data in wrong format)",
+    "testName": "Wrong body 6.PUT.comments (fields data in wrong format)",
     "uri": "/comments/125",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": 1,
       "id": 125,
@@ -1767,50 +1100,35 @@
       "email": "Eliseo@gardner.biz",
       "body": "laudantium enim quasi e",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.4 (more fields than necessary)",
+    "testName": "Wrong body 6.PUT.albums (more fields than necessary)",
     "uri": "/albums/23",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "id": 23,
       "title": "quidem molestiae enim",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.5 (more fields than necessary)",
+    "testName": "Wrong body 6.PUT.todos (more fields than necessary)",
     "uri": "/todos/93",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "id": 93,
       "title": "delectus aut autem",
       "completed": false,
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.1.6 (more fields than necessary)",
+    "testName": "Wrong body 6.PUT.users (more fields than necessary)",
     "uri": "/users/2",
     "method": "PUT",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "id": 2,
       "name": "Leanne Graham",
@@ -1834,97 +1152,67 @@
         "bs": "harness real-time e-markets"
       },
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.1 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.photos (more fields than necessary)",
     "uri": "/photos/15",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "albumId": 10,
       "title": "this is new album",
       "url": "some url",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.2 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.posts (more fields than necessary)",
     "uri": "/posts/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
       "body": "quia et s",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.3 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.comments (more fields than necessary)",
     "uri": "/comments/25",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "postId": 1,
       "name": "id labore ex et quam laborum",
       "email": "Eliseo@gardner.biz",
       "body": "laudantium enim quasi e",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.4 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.albums (more fields than necessary)",
     "uri": "/albums/23",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "title": "quidem molestiae enim",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.5 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.todos (more fields than necessary)",
     "uri": "/todos/93",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "userId": 1,
       "title": "delectus aut autem",
       "completed": false,
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.2.6 (more fields than necessary)",
+    "testName": "Wrong body 6.POST.users (more fields than necessary)",
     "uri": "/users/2",
     "method": "POST",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": "Leanne Graham",
       "username": "Bret",
@@ -1947,93 +1235,60 @@
         "bs": "harness real-time e-markets"
       },
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.1 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.photos (more fields than necessary)",
     "uri": "/photos/15",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "this is new album",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.2 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.posts (more fields than necessary)",
     "uri": "/posts/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "sunt aut ehenderit",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.3 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.comments (more fields than necessary)",
     "uri": "/comments/25",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": "idlabore ex et quam laborum",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.4 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.albums (more fields than necessary)",
     "uri": "/albums/23",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "quidemmolestiae enim",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.5 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.todos (more fields than necessary)",
     "uri": "/todos/93",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "title": "delectusaut autem",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   },
   {
-    "testName": "Wrong body 6.3.6 (more fields than necessary)",
+    "testName": "Wrong body 6.PATCH.users (more fields than necessary)",
     "uri": "/users/2",
     "method": "PATCH",
-    "expStatusCode": 400,
-    "expStatusMessage": "Bad request",
     "body": {
       "name": "LeanneGraham",
       "unnecessaryField": true
-    },
-    "headers": {
-      "User-Agent": "Request-Promise"
     }
   }
 ]
